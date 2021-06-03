@@ -1,15 +1,19 @@
 # Kubernetes
 
 Sep 1:  Install apt-transport-https.
+
         sudo apt install -y apt-transport-https
         
         
 Step 2: Add the Kubernetes Key.
+
         curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
         
         
 Step 3: And add the Kubernetes Repository by creating a new repo.list file on the '/etc/apt/sources.list.d' directory.
+
         cd /etc/apt/
+        
         sudo vim sources.list.d/kubernetes.list
         
         
